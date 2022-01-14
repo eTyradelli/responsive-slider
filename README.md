@@ -12,7 +12,7 @@
 
 Hello! Thanks for visiting. I'm Eleana and I'm a Junior Frontend Developer from Greece.
 
-This is an attempt at a responsive fullpage slider with some text and image transitions. The layout changes a little depending on screen sizes.
+This is an attempt at a responsive fullpage slider with some text and image transitions. The layout changes a little depending on screen sizes. On touch screens the user can also swipe left or right to navigate between slides.
 
 ### Screenshot
 

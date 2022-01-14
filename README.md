@@ -1,7 +1,6 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -17,14 +16,15 @@ This is an attempt at a responsive fullpage slider with some text and image tran
 
 ### Screenshot
 
-![](images/finished-project-live-photos/todo-app-desktop-dark-mode.png)
-![](images/finished-project-live-photos/todo-app-desktop-light-mode.png)
-![](images/finished-project-live-photos/todo-app-mobile-dark-mode.png)
+![](assets/responsive-slide-finished-photo-desktop.png)
+![](assets/responsive-slide-finished-photo-tablet.png)
+![](assets/responsive-slide-finished-photo-mobile.png)
 
 
 ### Links
 
 - Live Site URL: [GitHub Pages](https://etyradelli.github.io/responsive-slider/)
+- Live Site URL: [Codepen](https://codepen.io/eTyradelli/pen/qBPYROZ)
 
 
 ## My process
@@ -41,6 +41,7 @@ This was the most JS-heavy project I've worked on yet, so I spent most of time g
 - CSS Grid
 - BEM
 - Mobile-first workflow
+
 
 ### Continued development
 

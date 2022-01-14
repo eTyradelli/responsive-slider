@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="slider-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Cormorant+Infant:wght@500&family=Hind+Madurai:wght@300&display=swap" rel="stylesheet">
+  <title>Responsive slider</title>
+</head>
+<body>
+
+  <a href="#main" class="skip-to-content">Skip to content</a>
+
+  <header class="nav">
+    <div>
+      <img src="assets/tyradelli-logo@1000.png" alt="Eleana Tyradelli, Front-end Developer" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+      <div class="mobile-nav-toggle__icon"></div>
+      <span class="sr-only" aria-expanded="false">Menu</span>
+    </button>
+  </header>
+
+  <section class="slider__container">
+
+    <nav class="tabs" role="tablist" aria-label="Slider navigation">
+
+      <div id="taste-taiwan" class="tab current" role="tab" aria-selected="true" aria-controls="taste-taiwan-tab" data-image="taste-taiwan-image" tabindex="0">
+        <svg class="tab__icon--transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.83 186.83">
+          <title>Taste Taiwan</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <g>
+                <rect x="28.36" y="28.36" width="130.11" height="130.11" transform="translate(93.41 -38.69) rotate(45)" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 3px"/>
+                <path d="M65.86,90.11H121v4.4H65.86Z" style="fill: #fff"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+  
+      </div>
+  
+      <div id="stinky-tofu" class="tab" role="tab" aria-selected="false" aria-controls="stinky-tofu-tab" data-image="stinky-tofu-image" tabindex="0">
+        <svg class="tab__icon--transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.83 186.83">
+          <title>Stinky tofu</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <g>
+                <rect x="28.36" y="28.36" width="130.11" height="130.11" transform="translate(93.41 -38.69) rotate(45)" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 3px"/>
+                <path d="M64.41,109.51h58V114h-58ZM70,70.8h46.9v4.52H70Z" style="fill: #fff"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+  
+      <div id="xiao-long-bao" class="tab" role="tab" aria-selected="false" aria-controls="xiao-long-bao-tab" data-image="xiao-long-bao-image" tabindex="0">
+        <svg class="tab__icon--transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.83 186.83">
+          <title>Xiaolong bao</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <g>
+                <rect x="28.36" y="28.36" width="130.11" height="130.11" transform="translate(93.41 -38.69) rotate(45)" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 3px"/>
+                <path d="M65.06,112.38h56.71v4.39H65.06ZM68.8,68.06h49.35v4.39H68.8ZM73,89.54h40.13v4.39H73Z" style="fill: #fff"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+  
+      <div id="pork-zongzi" class="tab" role="tab" aria-selected="false" aria-controls="pork-zongzi-tab" data-image="pork-zongzi-image" tabindex="0">
+        <svg class="tab__icon--transparent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.83 186.83">
+          <title>Pork zongzi</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <g>
+                <rect x="28.36" y="28.36" width="130.11" height="130.11" transform="translate(93.41 -38.69) rotate(45)" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 3px"/>
+                <path d="M66.64,67.38h53.55v51.55h-4.52v-4.26H71v4.77H66.64ZM71,110.48h44.71V71.64H101.61V91.51c0,2.32.26,2.58,2.39,2.58h3.35c3.55,0,3.61,0,3.81-8a10.07,10.07,0,0,0,3.42,1.74,39.43,39.43,0,0,1-.71,7c-.71,1.74-2,2.9-6.19,2.9h-4.52c-5.81,0-5.81-3.29-5.81-6.77V71.64H88.12C87.41,85.06,85.61,96,75,102a11.56,11.56,0,0,0-2.71-3.16c9.29-5.1,11.1-14.52,11.61-27.16H71Z" style="fill: #fff"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+    </nav>
+
+    <div class="slides">
+      <div id="taste-taiwan-image" class="slide current" role="img" aria-label="Steaming baskets of soup dumplings." aria-roledescription="slide" >
+        <p class="slide__legend">Photo credit: <a href="https://unsplash.com/@giorey_skylabpixel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="blank">Visit Gio Rey Tabernero profil on Unsplash</a>
+        </p>
+      </div>
+      <div hidden id="stinky-tofu-image" class="slide" role="img" aria-label="Stinky tofu pieces braising in sauce." aria-roledescription="slide" >
+        <p class="slide__legend">Photo credit: <a href="https://unsplash.com/@andrew_haimerl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="blank">Visit Andrew Haimerl (andrewnef) profile on Unsplash</a>
+        </p>
+      </div>
+      <div hidden id="xiao-long-bao-image" class="slide" role="img" aria-label="A steaming basket of soup dumplings." aria-roledescription="slide" >
+        <p class="slide__legend">Photo credit: <a href="https://unsplash.com/@__menglong?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="blank">Visit Bao Menglong profile on Unsplash</a>
+        </p>
+      </div>
+      <div hidden id="pork-zongzi-image" class="slide" role="img" aria-label="Various wrapped and unwrapped zongzi and zongzi ingredients." aria-roledescription="slide" >
+        <p class="slide__legend">Photo credit: <a href="https://unsplash.com/@picoftasty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="blank">Visit Mae Mu profile on Unsplash</a>
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <main id="main">
+
+    <div class="details" tabindex="0">
+      <article id="taste-taiwan-tab" role="tabpanel" aria-labelledby="taste-taiwan" class="current">
+        <h1 class="details__title">Taste<br>Taiwan</h1>
+        <p class="details__subtitle">Culinary diversity that makes Taiwan a gourmet heaven.</p>
+        <p class="details__desc">In Taiwan, cooking techniques from all areas of China have fused, creating a mosaic of both traditional and re-imagined specialties. From gourmet restaurants to night market stalls, Taiwan is sure to offer an unforgetable culinary experience to those with a curious palate.</p>
+        <div class="details__nav tablet">
+
+          <div class="arrow-left previous" tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.92 26.25">
+              <title>arrow-left</title>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path d="M39.92,25,4.92,1.5h131" style="fill: none;stroke: #2c2c2c;stroke-miterlimit: 10;stroke-width: 3px"/>
+                </g>
+              </g>
+            </svg>
+            
+            <span>Previous</span>
+          </div>
+    
+          <div class="arrow-right next" tabindex="0">
+            <span>Next</span>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.92 26.25">
+              <title>arrow-right</title>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path d="M96,25,131,1.5H0" style="fill: none;stroke: #2c2c2c;stroke-miterlimit: 10;stroke-width: 3px"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+    
+        </div>
+      </article>
+  
+      <article hidden="true" id="stinky-tofu-tab" role="tabpanel" aria-labelledby="stinky-tofu">
+        <h1 class="details__title">Stinky<br>Tofu</h1>
+        <p class="details__subtitle">You'll smell it long before you see it.</p>
+        <p class="details__desc">A fermented tofu snack that is deep-fried and covered in sauce. Although its smell is not very convincing, its surprisingly tasty. Look for it at any night market, just trust your nose and you'll spot it.</p>
+        <div class="details__nav tablet">
+
+          <div class="arrow-left previous" tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.92 26.25">
+              <title>arrow-left</title>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path d="M39.92,25,4.92,1.5h131" style="fill: none;stroke: #2c2c2c;stroke-miterlimit: 10;stroke-width: 3px"/>
+                </g>
+              </g>
+            </svg>
+            
+            <span>Previous</span>
+          </div>
+    
+          <div class="arrow-right next" tabindex="0">
+            <span>Next</span>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.92 26.25">
+              <title>arrow-right</title>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path d="M96,25,131,1.5H0" style="fill: none;stroke: #2c2c2c;stroke-miterlimit: 10;stroke-width: 3px"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+    
+        </div>
+      </article>
+
+      <article hidden="true" id="xiao-long-bao-tab" role="tabpanel" aria-labelledby="xiao-long-bao">
+        <h1 class="details__title">Xiaolong<br>Bao</h1>
+        <p class="details__subtitle">One bite to rule them all.</p>
+        <p class="details__desc">Chinese Soup Dumplings, or xiaolongbao (小笼包) are steamed dumplings made of very thin wrapper and a filling of pork and hot soup. Yes, the soup is INSIDE the dumpling. Heaven in one bite. <a href="https://thewoksoflife.com/steamed-shanghai-soup-dumplings-xiaolongbao/" target="blank">Check out this recipe for Xiaolongbao.</a>
+        </p>
+        <div class="details__nav tablet">
+
+          <div class="arrow-left previous" tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.92 26.25">
+              <title>arrow-left</title>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path d="M39.92,25,4.92,1.5h131" style="fill: none;stroke: #2c2c2c;stroke-miterlimit: 10;stroke-width: 3px"/>
+                </g>
+              </g>
+            </svg>
+            
+            <span>Previous</span>
+          </div>
+    
+          <div class="arrow-right next" tabindex="0">
+            <span>Next</span>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.92 26.25">
+              <title>arrow-right</title>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path d="M96,25,131,1.5H0" style="fill: none;stroke: #2c2c2c;stroke-miterlimit: 10;stroke-width: 3px"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+    
+        </div>
+      </article>
+
+      <article hidden="true" id="pork-zongzi-tab" role="tabpanel" aria-labelledby="pork-zongzi">
+        <h1 class="details__title">Pork<br>Zongzi</h1>
+        <p class="details__subtitle">A traditional delicacy with a variety as rich as its history.</p>
+        <p class="details__desc">Zongzi is a traditional Asian rice dish made of glutinous rice stuffed with different fillings and wrapped in bamboo leaves, then steamed or boiled for hours. <a href="https://www.taipeitimes.com/News/feat/archives/2019/06/06/2003716421" target="blank">Read more about some variations of Zongzi one can find in Taiwan.</a></p>
+        <div class="details__nav tablet">
+
+          <div class="arrow-left previous" tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.92 26.25">
+              <title>arrow-left</title>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path d="M39.92,25,4.92,1.5h131" style="fill: none;stroke: #2c2c2c;stroke-miterlimit: 10;stroke-width: 3px"/>
+                </g>
+              </g>
+            </svg>
+            
+            <span>Previous</span>
+          </div>
+    
+          <div class="arrow-right next" tabindex="0">
+            <span>Next</span>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.92 26.25">
+              <title>arrow-right</title>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path d="M96,25,131,1.5H0" style="fill: none;stroke: #2c2c2c;stroke-miterlimit: 10;stroke-width: 3px"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+    
+        </div>
+      </article>
+    </div>
+
+    <div class="details__nav desktop">
+
+      <div class="arrow-left previous" tabindex="0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.92 26.25">
+          <title>Previous article</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path d="M39.92,25,4.92,1.5h131" style="fill: none;stroke: #2c2c2c;stroke-miterlimit: 10;stroke-width: 3px"/>
+            </g>
+          </g>
+        </svg>
+        
+        <span>Previous</span>
+      </div>
+
+      <div class="arrow-right next" tabindex="0">
+        <span>Next</span>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.92 26.25">
+          <title>Next article</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path d="M96,25,131,1.5H0" style="fill: none;stroke: #2c2c2c;stroke-miterlimit: 10;stroke-width: 3px"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>Contact Eleana: <a href="https://www.linkedin.com/in/eleanatyradelli/" target="blank">LinkedIn</a> / <a href="mailto:el.tyradelli@gmail.com">Email</a></p>
+  </footer>
+  
+
+  <script src="slider-app.js"></script>
+</body>
+</html>
